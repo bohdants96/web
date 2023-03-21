@@ -1,51 +1,60 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login | Page</title>
-    <link rel="stylesheet" href="assets/css/loginstyles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audience Booking</title>
+    <link rel="stylesheet" href="assets/css/mainstyles.css">
 </head>
 <body>
-<div class="login__body">
-    <div class="login__box">
-        <div class="row rs">
-            <div class="col-lg-6 image_box">
-                <img src="assets/images/test.png" alt="">
+<header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Audience</a></li>
+            <li><a href="#">Bookings</a></li>
+            <li><a href="#">Profile</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section class="hero">
+        <h1>Welcome to Audience Booking</h1>
+        <p>Find the best audience for you and your friends!</p>
+        <a href="#" class="button">View Rooms</a>
+    </section>
+    <section class="recommended-events">
+        <h2>Recommended Rooms</h2>
+        <div class="event-list">
+            <div class="room">
+                <img src="https://via.placeholder.com/150x150" alt="Room Image">
+                <h3>Room Name</h3>
+                <p>Capacity: XXX</p>
+                <p>Location: City, State</p>
+                <a href="#" class="button">Book Now</a>
             </div>
-            <div class="col-lg-6 win">
-                <form action="" class="login__form">
-                    <h4 class="text-center">Login Here</h4>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Enter Your Username">
-                    </div>
-                    <div class="form-group">
-                        <input type="password" class="form-control" placeholder="Enter Your Password">
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <a class="btn btn-custom-submit" href="main.html">Log In</a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <a class="btn btn-custom-sign-up" href='signup.html'>Sign up</a>
-                        </div>
-                    </div>
-                    <div class="row for">
-                        <div class="col-lg-6">
-                            <a href="" class="forget_password">Forgot password?</a>
-                        </div>
-                    </div>
-                </form>
+            <div class="room">
+                <img src="https://via.placeholder.com/150x150" alt="Room Image">
+                <h3>Room Name</h3>
+                <p>Capacity: XXX</p>
+                <p>Location: City, State</p>
+                <a href="#" class="button">Book Now</a>
             </div>
-            <span class="kolo one"></span>
-            <span class="kolo two"></span>
+            <div class="room">
+                <img src="https://via.placeholder.com/150x150" alt="Room Image">
+                <h3>Room Name</h3>
+                <p>Capacity: XXX</p>
+                <p>Location: City, State</p>
+                <a href="#" class="button">Book Now</a>
+            </div>
         </div>
-    </div>
-</div>
+    </section>
+    <span class="one"></span>
+    <span class="two"></span>
+    <span class="three"></span>
+</main>
+<footer>
+    <p>&copy; Audience Booking 2023</p>
+</footer>
 </body>
 </html>
