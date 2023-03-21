@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900");
+body {
+  margin: 100%;
+}
+
+@media screen and (min-width: 1001px) {
+  .login__body {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #e5e5e5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .login__body .login__box {
+    width: 53em;
+    height: 37em;
+    background-color: #ffffff;
+    border-radius: 12px;
+  }
+  .login__body .login__box .image_box img {
+    height: 37em;
+    border-bottom-left-radius: 12px;
+  }
+  .login__body .login__box form.login__form {
+    padding: 30px;
+    margin-top: 20px;
+  }
+  .login__body .login__box form.login__form h4 {
+    font-size: 30px;
+    color: #000000;
+  }
+  .login__body .login__box form.login__form .btn.btn-custom-submit {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 20px;
+    border: 1px solid;
+  }
+  .login__body .login__box form.login__form .btn.btn-custom-login {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 1px solid;
+  }
+  .login__body .login__box form.login__form .form-control {
+    border-radius: 20px;
+    opacity: 75%;
+  }
+  .login__body .login__box form.login__form .form-group {
+    padding-top: 1px;
+  }
+  .login__body .login__box form.login__form .row {
+    padding-left: 25px;
+    padding-top: 10px;
+  }
+  .login__body .login__box form.login__form .check {
+    text-align: center;
+  }
+  .login__body .login__box form.login__form input[type=radio] {
+    width: 40px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .login__body .login__box form.login__form .radio-container {
+    padding-left: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .login__body {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #e5e5e5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .login__body .login__box {
+    width: 80%;
+    height: 37em;
+    background-color: #ffffff;
+    border-radius: 12px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+  }
+  .login__body .login__box span.kolo.one {
+    position: absolute;
+    width: 40%;
+    height: 25%;
+    background-color: #00ffff;
+    right: -15%;
+    bottom: -15%;
+    opacity: 50%;
+    border-radius: 100%;
+  }
+  .login__body .login__box span.kolo.two {
+    position: absolute;
+    width: 40%;
+    height: 25%;
+    background-color: #00ffff;
+    left: -15%;
+    top: -15%;
+    opacity: 50%;
+    border-radius: 100%;
+  }
+  .login__body .login__box .image_box {
+    height: 0;
+    width: 0;
+  }
+  .login__body .login__box .image_box img {
+    height: 0;
+    opacity: 0;
+    border-bottom-left-radius: 12px;
+  }
+  .login__body .login__box form.login__form {
+    padding: 30px;
+    margin-top: 20px;
+  }
+  .login__body .login__box form.login__form h4 {
+    font-size: 30px;
+    color: #000000;
+  }
+  .login__body .login__box form.login__form .col-lg-6.sub {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+  }
+  .login__body .login__box form.login__form .col-lg-6.sign {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+  }
+  .login__body .login__box form.login__form .btn.btn-custom-submit {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 20px;
+    border: 1px solid;
+  }
+  .login__body .login__box form.login__form .btn.btn-custom-login {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 1px solid;
+  }
+  .login__body .login__box form.login__form .form-control {
+    border-radius: 20px;
+    opacity: 75%;
+  }
+  .login__body .login__box form.login__form .form-group {
+    padding-top: 1px;
+  }
+  .login__body .login__box form.login__form .row {
+    padding-left: 25px;
+    padding-top: 10px;
+  }
+  .login__body .login__box form.login__form .check {
+    text-align: center;
+  }
+  .login__body .login__box form.login__form input[type=radio] {
+    width: 40px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .login__body .login__box form.login__form .radio-container {
+    padding-left: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}

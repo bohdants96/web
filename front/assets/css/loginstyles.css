@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900");
+body {
+  margin: 100%;
+}
+
+@media (min-width: 1001px) {
+  .login__body {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #e5e5e5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .login__body .login__box {
+    width: 53em;
+    height: 27em;
+    background-color: #ffffff;
+    border-radius: 12px;
+  }
+  .login__body .login__box .image_box img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 27em;
+    border-radius: 12px;
+  }
+  .login__body .login__box form.login__form {
+    padding: 30px;
+    margin-top: 40px;
+  }
+  .login__body .login__box form.login__form h4 {
+    font-size: 30px;
+    color: black;
+  }
+  .login__body .login__box form.login__form .btn.btn-custom-submit {
+    background-color: #ffffff;
+    color: black;
+    border-radius: 20px;
+    border: 1px solid;
+    position: absolute;
+    top: -20px;
+    left: 92%;
+    -webkit-transform: translate(-50%, 50%);
+            transform: translate(-50%, 50%);
+    width: 100px;
+  }
+  .login__body .login__box form.login__form .btn.btn-custom-sign-up {
+    background-color: #ffffff;
+    color: black;
+    border-radius: 20px;
+    position: absolute;
+    top: 25px;
+    left: 92%;
+    -webkit-transform: translate(-50%, 50%);
+            transform: translate(-50%, 50%);
+    width: 100px;
+    border: 1px solid;
+  }
+  .login__body .login__box form.login__form .forget_password {
+    color: black;
+    position: absolute;
+    top: 75px;
+    left: 92%;
+    -webkit-transform: translate(-50%, 50%);
+            transform: translate(-50%, 50%);
+    width: 130px;
+  }
+  .login__body .login__box form.login__form .form-control {
+    border-radius: 20px;
+    opacity: 75%;
+  }
+  .login__body .login__box form.login__form .form-group {
+    padding-top: 10px;
+  }
+  .login__body .login__box form.login__form .row {
+    padding-left: 25px;
+    padding-top: 10px;
+  }
+}
+@media (max-width: 1000px) {
+  .login__body {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #e5e5e5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .login__body .login__box {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%;
+    height: 75%;
+    background-color: #ffffff;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+  }
+  .login__body .login__box span.kolo.one {
+    position: absolute;
+    width: 40%;
+    height: 25%;
+    background-color: #00ffff;
+    right: -15%;
+    bottom: -15%;
+    opacity: 50%;
+    border-radius: 100%;
+  }
+  .login__body .login__box span.kolo.two {
+    position: absolute;
+    width: 40%;
+    height: 25%;
+    background-color: #00ffff;
+    left: -15%;
+    top: -15%;
+    opacity: 50%;
+    border-radius: 100%;
+  }
+  .login__body .login__box .image_box {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  .login__body .login__box .image_box img {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  .login__body .login__box form.login__form {
+    position: center;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .login__body .login__box form.login__form .col-lg-6.win {
+    position: center;
+    width: 100%;
+    height: 100%;
+  }
+  .login__body .login__box form.login__form h4 {
+    position: center;
+    font-size: 300%;
+    color: black;
+  }
+  .login__body .login__box form.login__form .btn.btn-custom-submit {
+    position: center;
+    background-color: #ffffff;
+    color: black;
+    border-radius: 20px;
+    border: 1px solid;
+    width: 100%;
+  }
+  .login__body .login__box form.login__form .btn.btn-custom-sign-up {
+    background-color: #ffffff;
+    color: black;
+    border-radius: 20px;
+    position: center;
+    width: 100%;
+    border: 1px solid;
+  }
+  .login__body .login__box form.login__form .forget_password {
+    color: black;
+    position: center;
+    width: 130%;
+  }
+  .login__body .login__box form.login__form .form-control {
+    border-radius: 20px;
+    opacity: 75%;
+  }
+  .login__body .login__box form.login__form .form-group {
+    padding-top: 10px;
+  }
+  .login__body .login__box form.login__form .row {
+    padding-top: 10px;
+  }
+}

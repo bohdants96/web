@@ -1,0 +1,303 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #F5F5F5;
+}
+
+header {
+  background-color: #333;
+  color: #FFF;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 1rem;
+  padding: 10px;
+}
+
+nav ul li a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.hero {
+  text-align: center;
+  background-image: url('https://via.placeholder.com/1200x400');
+  background-size: cover;
+  background-position: center;
+  color: #FFF;
+  padding: 5rem 0;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.button {
+  display: inline-block;
+  background-color: #FFF;
+  color: #333;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 3px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.button:hover {
+  background-color: #DDD;
+}
+
+.recommended-events {
+  margin-top: 4rem;
+}
+
+.recommended-events h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.event-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.room {
+  background-color: #FFF;
+  border: 1px solid #DDD;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.room img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.room h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.room p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.room .button {
+  display: inline-block;
+  background-color: #333;
+  color: #FFF;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 3px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.room .button:hover {
+  background-color: #555;
+}
+
+span.one {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background-color: #00ffff;
+  right: 0;
+  bottom: 20%;
+  opacity: 50%;
+  border-radius: 100%;
+
+}
+
+span.two {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #00ffff;
+  left: 20%;
+  top: 79%;
+  opacity: 50%;
+  border-radius: 100%;
+}
+
+span.three {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: #00ffff;
+  left: 5%;
+  top: 55%;
+  opacity: 50%;
+  border-radius: 100%;
+
+}
+
+footer {
+  background-color: #333;
+  color: #FFF;
+  text-align: center;
+  padding: 1rem;
+}
+
+
+@media screen and (max-width: 768px) {
+  nav ul li {
+    margin-right: 0.5rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .button {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+  }
+
+  .recommended-events h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .event-list {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+
+  .room h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .room p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .room .button {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1030px) {
+  span.one {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: #00ffff;
+    right: 0;
+    bottom: 20%;
+    opacity: 50%;
+    border-radius: 100%;
+
+  }
+
+  span.two {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #00ffff;
+    left: 80%;
+    top: 150%;
+    opacity: 50%;
+    border-radius: 100%;
+  }
+
+  span.three {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #00ffff;
+    left: -10%;
+    top: 55%;
+    opacity: 50%;
+    border-radius: 100%;
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+  span.one {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: #00ffff;
+    right: -5%;
+    bottom: -24%;
+    opacity: 50%;
+    border-radius: 100%;
+
+  }
+
+  span.two {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #00ffff;
+    left: 0;
+    top: 163%;
+    opacity: 50%;
+    border-radius: 100%;
+  }
+
+  span.three {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #00ffff;
+    left: -40%;
+    top: 55%;
+    opacity: 50%;
+    border-radius: 100%;
+
+  }
+}

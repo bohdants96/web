@@ -1,0 +1,163 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+@media (min-width: 1001px) {
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 15%;
+
+    position: relative;
+
+    span.one {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background-color: #00ffff;
+      right: 0;
+      bottom: -15%;
+      opacity: 50%;
+      border-radius: 100%;
+
+    }
+
+    span.two {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background-color: #00ffff;
+      left: 20%;
+      bottom: -70%;
+      opacity: 50%;
+      border-radius: 100%;
+    }
+
+    span.three {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background-color: #00ffff;
+      left: 3%;
+      top: 5%;
+      opacity: 50%;
+      border-radius: 100%;
+
+    }
+
+  }
+
+
+  h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 30px;
+  }
+
+  p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+  }
+
+  .btn.start {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #00ffff;
+    border: none;
+    border-radius: 45px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .btn.start:hover {
+    background-color: #00ffff;
+    color: #000000;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50%;
+
+    position: relative;
+
+    span.one {
+      position: absolute;
+      width: 70px;
+      height: 70px;
+      background-color: #00ffff;
+      right: 0;
+      bottom: -15%;
+      opacity: 50%;
+      border-radius: 100%;
+
+    }
+
+    span.two {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background-color: #00ffff;
+      left: 20%;
+      bottom: -70%;
+      opacity: 50%;
+      border-radius: 100%;
+    }
+
+    span.three {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background-color: #00ffff;
+      left: -15%;
+      top: -20%;
+      opacity: 50%;
+      border-radius: 100%;
+
+    }
+
+  }
+
+  .main_text{
+    font-size: 100px;
+    color: #c73a3a;
+    margin-bottom: 30px;
+  }
+  h1 {
+    font-size: 100px;
+    color: #c73a3a;
+    margin-bottom: 30px;
+  }
+
+  p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+  }
+
+  .btn.start {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #00ffff;
+    border: none;
+    border-radius: 45px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    &:hover {
+      background-color: #00ffff;
+      color: #000000;
+    }
+  }
+}
