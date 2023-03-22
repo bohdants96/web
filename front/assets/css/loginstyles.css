@@ -161,7 +161,7 @@ body {
   }
   .login__body .login__box form.login__form h4 {
     position: center;
-    font-size: 300%;
+    font-size: 200%;
     color: black;
   }
   .login__body .login__box form.login__form .btn.btn-custom-submit {

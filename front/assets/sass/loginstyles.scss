@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+$backcolor: #e5e5e5;
+$main: #ffffff;
+$span: #00ffff;
+
 body{
   margin: 100%;
+}
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+          border-radius: $radius;
 }
 
 @media (min-width: 1001px) {
@@ -8,21 +17,21 @@ body{
   position: fixed;
   width: 100%;
   height: 100%;
-  background-color: #e5e5e5;
+  background-color: $backcolor;
   display: flex;
   justify-content: center;
   align-items: center;
   .login__box {
       width: 53em;
       height: 27em;
-      background-color: #ffffff;
-      border-radius: 12px;
+      background-color: $main;
+      @include border-radius(12px);
 
       .image_box {
         img {
           display: flex;
           height: 27em;
-          border-radius: 12px
+          @include border-radius(12px);
         }
       }
 
@@ -35,9 +44,9 @@ body{
         }
 
         .btn.btn-custom-submit {
-          background-color: #ffffff;
+          background-color: $main;
           color: black;
-          border-radius: 20px;
+          @include border-radius(20px);
           border: 1px solid;
           position: absolute;
           top: -20px;
@@ -47,9 +56,9 @@ body{
         }
 
         .btn.btn-custom-sign-up {
-          background-color: #ffffff;
+          background-color: $main;
           color: black;
-          border-radius: 20px;
+          @include border-radius(20px);
           position: absolute;
           top: 25px;
           left: 92%;
@@ -68,7 +77,7 @@ body{
         }
 
         .form-control {
-          border-radius: 20px;
+          @include border-radius(20px);
           opacity: 75%;
         }
 
@@ -89,7 +98,7 @@ body{
   position: fixed;
   width: 100%;
   height: 100%;
-  background-color: #e5e5e5;
+  background-color: $backcolor;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -100,8 +109,8 @@ body{
       display: flex;
       width: 80%;
       height: 75%;
-      background-color: #ffffff;
-      border-radius: 12px;
+      background-color: $main;
+      @include border-radius(12px);
       position: relative;
       overflow: hidden;
 
@@ -109,7 +118,7 @@ body{
       position: absolute;
       width: 40%;
       height: 25%;
-      background-color: #00ffff;
+      background-color: $span;
       right: -15%;
       bottom: -15%;
       opacity: 50%;
@@ -121,7 +130,7 @@ body{
       position: absolute;
       width: 40%;
       height: 25%;
-      background-color: #00ffff;
+      background-color: $span;
       left: -15%;
       top: -15%;
       opacity: 50%;
@@ -153,7 +162,7 @@ body{
         }
         h4 {
           position: center;
-          font-size: 300%;
+          font-size: 200%;
           color: black;
         }
 
@@ -161,7 +170,7 @@ body{
           position: center;
           background-color: #ffffff;
           color: black;
-          border-radius: 20px;
+          @include border-radius(20px);
           border: 1px solid;
           width: 100%;
         }
@@ -169,7 +178,7 @@ body{
         .btn.btn-custom-sign-up {
           background-color: #ffffff;
           color: black;
-          border-radius: 20px;
+          @include border-radius(20px);
           position: center;
           width: 100%;
           border: 1px solid;
@@ -182,7 +191,7 @@ body{
         }
 
         .form-control {
-          border-radius: 20px;
+          @include border-radius(20px);
           opacity: 75%;
         }
 
