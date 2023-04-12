@@ -11,7 +11,7 @@ body {
 
 header {
   background-color: #333;
-  color: #FFF;
+  color: #ffffff;
   text-align: center;
   padding: 1.5rem;
 }
@@ -43,7 +43,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #FFF;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -74,7 +74,7 @@ main {
 
 .button {
   display: inline-block;
-  background-color: #FFF;
+  background-color: #ffffff;
   color: #333;
   border: none;
   padding: 1rem 2rem;
@@ -107,7 +107,7 @@ main {
 }
 
 .room {
-  background-color: #FFF;
+  background-color: #ffffff;
   border: 1px solid #DDD;
   padding: 1rem;
   text-align: center;
@@ -133,7 +133,7 @@ main {
 .room .button {
   display: inline-block;
   background-color: #333;
-  color: #FFF;
+  color: #ffffff;
   border: none;
   padding: 0.8rem 1.5rem;
   border-radius: 3px;
@@ -182,7 +182,7 @@ span.three {
 
 footer {
   background-color: #333;
-  color: #FFF;
+  color: #ffffff;
   text-align: center;
   padding: 1rem;
 }
