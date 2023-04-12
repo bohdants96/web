@@ -16,6 +16,13 @@ header {
   padding: 1.5rem;
 }
 
+dialog {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #fff;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -53,15 +53,6 @@ main {
   padding: 2rem;
 }
 
-.hero {
-  text-align: center;
-  background-image: url("https://via.placeholder.com/1200x400");
-  background-size: cover;
-  background-position: center;
-  color: #FFF;
-  padding: 5rem 0;
-}
-
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
@@ -89,62 +80,21 @@ main {
   background-color: #DDD;
 }
 
-.recommended-events {
-  margin-top: 4rem;
+.profile {
+  margin-top: 2rem;
 }
 
-.recommended-events h2 {
+.profile h2 {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 2rem;
 }
 
-.event-list {
+.stats {
   display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-}
-
-.room {
-  background-color: #ffffff;
-  border: 1px solid #DDD;
-  padding: 1rem;
-  text-align: center;
-  border-radius: 3px;
-}
-
-.room img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 1rem;
-}
-
-.room h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.room p {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-}
-
-.room .button {
-  display: inline-block;
-  background-color: #333;
-  color: #ffffff;
-  border: none;
-  padding: 0.8rem 1.5rem;
-  border-radius: 3px;
-  font-size: 1.2rem;
-  text-decoration: none;
-  -webkit-transition: background-color 0.2s ease;
-  transition: background-color 0.2s ease;
-}
-
-.room .button:hover {
-  background-color: #555;
 }
 
 span.one {
@@ -185,6 +135,9 @@ footer {
   color: #ffffff;
   text-align: center;
   padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -206,13 +159,18 @@ footer {
     font-size: 1rem;
     padding: 0.8rem 1.5rem;
   }
-  .recommended-events h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
-  .event-list {
+  .stats {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .room h3 {
     font-size: 1.2rem;
