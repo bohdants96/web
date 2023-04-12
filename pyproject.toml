@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "9lab"
+version = "0.1.0"
+description = ""
+authors = ["bohdants96 <bohdantsisinskyi@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+flask = "^2.2.2"
+sqlalchemy = "^1.4.45"
+marshmallow = "^3.19.0"
+pytest = "^7.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
