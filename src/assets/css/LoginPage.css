@@ -1,0 +1,64 @@
+.login-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  border: 1px solid #e6e6e6;
+  padding: 20px;
+  width: 300px;
+  margin: 10% auto;
+  border-radius: 5px;
+}
+.login-container h2 {
+  margin: 0 0 20px 0;
+}
+.login-container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+.login-container form input {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+}
+.login-container form input:focus {
+  outline: none;
+  border-color: #333;
+}
+.login-container form .btns button {
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.login-container form .btns button:hover {
+  background-color: #1a1a1a;
+}
+
+@media screen and (max-width: 768px) {
+  .login-container {
+    margin: 25% auto;
+  }
+}

@@ -1,0 +1,60 @@
+dialog {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.button {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #333;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 3px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+
+.button:hover {
+  background-color: #DDD;
+}
+
+.recommended-events {
+  margin-top: 4rem;
+}
+
+.recommended-events h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.event-list {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    padding: 1rem;
+  }
+  .recommended-events h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .event-list {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+}

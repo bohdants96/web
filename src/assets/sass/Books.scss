@@ -1,0 +1,58 @@
+$backcolor: #e5e5e5;
+$main: #ffffff;
+$span: #00ffff;
+
+.room {
+  background-color: $main;
+  border: 1px solid #DDD;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.room img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.room h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.room p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.test3 {
+  display: flex;
+  justify-content: center;
+}
+
+.test3 button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 3px;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  cursor: pointer;
+  margin-right: 25%;
+}
+
+.test3 button:hover {
+  background-color: #444444;
+}
+
+.test3 button[type="button"] {
+  background-color: #ccc;
+  color: #333;
+  margin-right: 10px;
+}
+
+.test3 button[type="button"]:hover {
+  background-color: #aaa;
+}
