@@ -1,0 +1,22 @@
+.test2 {
+  text-align: center;
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+.test2 h2 {
+  color: #333;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.test2 .mail {
+  font-size: 24px;
+}
+.test2 .lin {
+  font-size: 24px;
+}
+
+@media screen and (max-width: 500px) {
+  .test2 .mail {
+    font-size: 20px;
+  }
+}
