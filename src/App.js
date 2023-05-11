@@ -9,6 +9,8 @@ import ProfilePage from "./components/ProfilePage";
 import Bookings from "./components/Bookings";
 import AudiencePage from "./components/AudiencePage";
 import LoginPage from "./components/LoginPage";
+import SighUpPage from "./components/SighUpPage";
+import EditMePage from "./components/EditMePage";
 const App = () => {
   return (
     <>
@@ -20,6 +22,8 @@ const App = () => {
             <Route path="/bookings" element={<Bookings/>}/>
             <Route path="/rooms" element={<AudiencePage/>}/>
             <Route path="/login" element={<LoginPage/>}/>
+            <Route path="/signup" element={<SighUpPage/>}/>
+            <Route path="/edit_me" element={<EditMePage/>}/>
             <Route path="*" element={<Navigate to="/" replace />}/>
         </Routes>
         <Footer/>
