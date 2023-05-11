@@ -7,9 +7,23 @@ const Bookings = () => {
     const [books, setBooks] = useState([])
 
     async function getBook() {
-        const response = await axios.get('http://127.0.0.1:5000/user/2/books')
-        setBooks(response.data)
-        console.log(books)
+        // Get the username and password from sessionStorage
+        const username = sessionStorage.getItem('username');
+        const password = sessionStorage.getItem('password');
+
+        console.log(username)
+        try {
+            const response = await axios.get(`http://127.0.0.1:5000/user/${username}/books`, {
+                auth: {
+                    username,
+                    password,
+                }
+            })
+            setBooks(response.data)
+            console.log(books)
+        } catch (err) {
+            setBooks(null)
+        }
     }
 
     useEffect(() => {
@@ -20,14 +34,22 @@ const Bookings = () => {
         <main>
             <Hero/>
             <section className="recommended-events">
-                <h2>Your bookings</h2>
+                {books != null ? (
+                    <h2>Your bookings</h2>) : (<h2>Here will be your bookings!</h2>)}
                 <div className="event-list" id="event-list">
-                    {books.map((book) =>
-                        <Books book={book} key={book.id}/>)}
-                </div>
-            </section>
-        </main>
-    );
-};
+                    {books != null ? (
+                                books.length === 0 ? (
+                                    <h2>You don't have books</h2>
+                                ) : (
+                                    books.map((book) =>
+                                        <Books book={book} key={book.id}/>)
+                                )) : (
+                        <h2>Please, login!</h2>
+                        )}
+                        </div>
+                        </section>
+                        </main>
+                        );
+                    };
 
 export default Bookings;
